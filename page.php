@@ -66,7 +66,7 @@ Template Name: デフォルト
             <div class="others_item_img">
               <img src="/wp-content/uploads/no-image.jpg" alt="">
             </div>
-            <a href="/message/" class="btn">園長挨拶だお</a>
+            <a href="/message/" class="btn">園長挨拶</a>
           </div>
         </div>
         <div class="column is-half-mobile is-one-quarter-tablet">
