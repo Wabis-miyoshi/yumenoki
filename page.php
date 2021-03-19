@@ -33,7 +33,6 @@ Template Name: デフォルト
   </section>
   <?php endif; ?>
 
-あああああ
   <?php if ( is_page('life') ) : ?>
     <?php get_template_part('include/life'); ?>
   <?php elseif ( is_page('link') ) : ?>
