@@ -162,12 +162,14 @@ $ls-small: 0.05em;
 
 .catList {
   display: flex;
-  padding: 15px;
-  justify-content: center;
   border-bottom: 1px solid $secondary;
   margin-bottom: 2rem;
   padding: 20px 10px;
-
+  white-space: nowrap;
+  overflow-x: scroll;
+  @include mq(tab) {
+    justify-content: center;
+  }
   li {
     margin: 0 10px;
     font-weight: 600;
