@@ -1,0 +1,23 @@
+.appeal {
+  .columns {
+    flex-direction: row-reverse;
+  }
+}
+.question {
+  .columns {
+    flex-direction: row-reverse;
+  }
+}
+
+.btn {
+  &.bannerInner_link {
+    background: none;
+    color: $black;
+  }
+}
+
+.recruit {
+  .columns {
+    flex-direction: row-reverse;
+  }
+}

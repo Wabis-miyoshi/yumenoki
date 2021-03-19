@@ -1,0 +1,1021 @@
+/* ==========================================================================
+   font-family
+   ========================================================================== */
+
+/* ==========================================================================
+   line-height
+   ========================================================================== */
+
+.lh-s {
+  line-height: $lh-s;
+}
+.lh-l {
+  line-height: $lh-l;
+}
+
+/* ==========================================================================
+   letter-spacing
+   ========================================================================== */
+
+.ls-ll {
+  letter-spacing: $ls-larger;
+}
+.ls-l {
+  letter-spacing: $ls-large;
+}
+
+/* ==========================================================================
+   btn
+   ========================================================================== */
+
+//btn
+
+.btn {
+  font-size: $font-size-medium;
+  color: $white;
+  text-align: center;
+  background: $primary;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 25px;
+  padding: 0.75rem;
+  transition: 0.3s;
+  border: 2px solid transparent;
+  &:hover {
+    color: $primary;
+    background: $white;
+    border: 2px solid $primary;
+    opacity: 1;
+  }
+  @include mq(pc) {
+    font-size: $font-size-larger;
+    border-radius: 27.5px;
+  }
+}
+
+.more {
+  transition: 0.3s;
+  font-weight: bold;
+  &:hover {
+    opacity: 1;
+    color: $primary;
+  }
+}
+
+/* ==========================================================================
+   color
+   ========================================================================== */
+
+//color
+
+.color-white {
+  color: $white;
+}
+.color-primary {
+  color: $primary;
+}
+
+//bg-color
+
+.bg-green {
+  background: rgba($color: $primary, $alpha: 0.2);
+}
+.bg-beige {
+  background: rgba($color: $beige, $alpha: 0.5);
+}
+//text
+
+.text-shadow {
+  text-shadow: 1px 0 0 $primary, 0 1px 0 $primary, -1px 0 0 $primary,
+    0 -1px 0 $primary;
+}
+
+/* ==========================================================================
+   width指定
+   ========================================================================== */
+
+//width
+.w-600 {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.w-800 {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.w-1000 {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.w-1200 {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==========================================================================
+   title
+   ========================================================================== */
+
+//blockTitle
+
+.blockTitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  &_illust {
+    height: 86px;
+    @include mq(tab) {
+      height: 123px;
+    }
+    img {
+      height: 100%;
+    }
+  }
+}
+
+//pageTitle
+
+.title-l {
+  margin-bottom: 2rem;
+
+  font-size: $font-size-large;
+  position: relative;
+  padding-bottom: 8px;
+  text-align: center;
+  @include mq(tab) {
+    font-size: 1.5675rem;
+  }
+  h3 {
+    font-weight: bold;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 83px;
+    height: 1px;
+    background: $primary;
+    left: 50%;
+    margin-left: -41.5px;
+    bottom: 0;
+  }
+}
+
+.title-border {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 10px;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid $black;
+}
+
+.title-border2 {
+  position: relative;
+  padding: 0 65px;
+  text-align: center;
+  &:before {
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    content: '';
+    background: $secondary;
+  }
+  span {
+    position: relative;
+    padding: 0 1em;
+    background: url(/wp-content/uploads/2021/03/bg-main.jpg);
+  }
+}
+
+/* ==========================================================================
+   news
+   ========================================================================== */
+
+//news
+
+.newsArea {
+  @include mq(tab) {
+    margin-bottom: 2rem;
+  }
+}
+.newsList {
+  margin-bottom: 2rem;
+  @include mq(tab) {
+    margin-bottom: 6rem;
+  }
+  &_item {
+    padding: 1rem 0;
+    border-bottom: 2px dotted rgba(99, 66, 49, 0.4);
+    &:hover {
+      a {
+        opacity: 1;
+      }
+      .newsList_item {
+        &_title {
+          &::before {
+            width: 100%;
+            transition: 0.3s;
+          }
+        }
+      }
+    }
+    &-time {
+      font-weight: bold;
+      @include mq(tab) {
+        width: 130px;
+        padding-top: 2px;
+      }
+    }
+    &_title {
+      font-weight: bold;
+      position: relative;
+      display: inline-block;
+      z-index: 1;
+      &::before {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 8px;
+        background: rgba($color: $primary, $alpha: 0.4);
+        left: 0;
+        bottom: 2px;
+        transition: 0.3s;
+        z-index: -1;
+      }
+      @include mq(tab) {
+        font-size: $font-size-medium;
+        margin-bottom: 7px;
+      }
+      &-single {
+        @include mq(tab) {
+          font-size: $font-size-title;
+        }
+      }
+    }
+    &_text {
+      font-weight: lighter;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  &_inner {
+    padding: 2rem 0;
+    border-top: 2px dotted rgba($color: $secondary, $alpha: 0.4);
+    min-height: 300px;
+    @include mq(pc) {
+      min-height: 400px;
+      padding: 3rem 0;
+    }
+  }
+}
+
+/* ==========================================================================
+   blog
+   ========================================================================== */
+
+.blog {
+  &List {
+    margin-bottom: 4rem;
+    &_item {
+      &_img {
+        img {
+          border-radius: 20px;
+        }
+      }
+      &-cat {
+        align-items: center;
+        .cat {
+          font-weight: bold;
+          color: $white;
+          background: $primary;
+          padding: 5px 1rem;
+          width: 138px;
+          text-align: center;
+          margin: 1rem 1rem 1rem 0;
+        }
+      }
+      &_title {
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
+   下層ページ
+   ========================================================================== */
+
+.pageAppeal {
+  @include mq(tab) {
+    display: flex;
+  }
+  &-left {
+    @include mq(tab) {
+      width: 40%;
+    }
+  }
+  &-catch {
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    white-space: nowrap;
+    font-size: $font-size-larger;
+    margin: 0 auto 2rem;
+    font-weight: 500;
+    @include mq(tab) {
+      margin: 1.5rem auto 0;
+      font-size: $font-size-title-l;
+    }
+    span {
+      display: block;
+      padding: 0.3rem 1rem;
+      border-left: 1px solid rgba($color: #707070, $alpha: 0.3);
+      border-right: 1px solid rgba($color: #707070, $alpha: 0.3);
+      &:last-child {
+        border-right-width: 0;
+      }
+    }
+  }
+  &-right {
+    @include mq(tab) {
+      width: 60%;
+    }
+  }
+  &_img {
+    margin-bottom: 1.5rem;
+    img {
+      display: block;
+      border-radius: 10px;
+      margin: 0 auto;
+    }
+  }
+  &_text {
+    font-size: $font-size-medium;
+    font-weight: lighter;
+    margin: 0 auto;
+    @include mq(pc) {
+      margin: 0 auto 1.5rem;
+    }
+  }
+}
+
+.ctm {
+  &_title {
+    font-size: $font-size-title;
+    text-align: center;
+    z-index: 1;
+    margin-bottom: 2rem;
+    @include mq(tab) {
+      font-size: $font-size-title-l;
+      margin-bottom: 5rem;
+    }
+    h3 {
+      font-weight: bold;
+      display: inline-block;
+      &.deco-white {
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 5px;
+          width: 35px;
+          height: 35px;
+          background: url(/wp-content/uploads/deco-white.png) no-repeat;
+          background-size: 100%;
+          margin-left: -22px;
+          z-index: -1;
+          @include mq(tab) {
+            width: 64px;
+            height: 58px;
+            margin-left: -40px;
+          }
+        }
+      }
+      &.deco-green {
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 5px;
+          width: 35px;
+          height: 35px;
+          background: url(/wp-content/uploads/deco-green.png) no-repeat;
+          background-size: 100%;
+          margin-left: -22px;
+          z-index: -1;
+          @include mq(tab) {
+            width: 64px;
+            height: 58px;
+            margin-left: -40px;
+          }
+        }
+      }
+    }
+  }
+  &_item {
+    @include mq(tab) {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 0 4rem;
+      margin-bottom: 5rem;
+    }
+    &-left {
+      @include mq(tab) {
+        width: 40%;
+      }
+    }
+    &-right {
+      @include mq(tab) {
+        width: 60%;
+        margin-left: 4rem;
+      }
+    }
+    &_title {
+      font-size: $font-size-large;
+      font-weight: bold;
+      color: $primary;
+      span {
+        display: block;
+        background: white;
+        margin-bottom: 1rem;
+        padding: 0.5rem 1rem;
+        transform: rotate(1deg);
+        text-align: center;
+        @include mq(pc) {
+          margin-bottom: 1.5rem;
+        }
+        &:last-child {
+          margin: 0 0 2rem 0;
+          transform: rotate(-1deg);
+          @include mq(pc) {
+            margin: 0 0 3rem 0;
+          }
+        }
+      }
+    }
+    &-nom {
+      font-size: $font-size-title-l;
+      color: $white;
+      font-weight: bold;
+      text-align: center;
+      margin: 0 0 2rem;
+      @include mq(tab) {
+        font-size: 65px;
+        margin-right: 2.5rem;
+      }
+      span {
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: $primary;
+        margin: 0 auto;
+        position: relative;
+        @include mq(tab) {
+          width: 9px;
+          height: 9px;
+        }
+        &::before {
+          content: '';
+          position: absolute;
+          bottom: -2.5px;
+          left: -15px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: $primary;
+          @include mq(tab) {
+            width: 9px;
+            height: 9px;
+            left: -25px;
+          }
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2.5px;
+          right: -15px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          background: $primary;
+          @include mq(tab) {
+            width: 9px;
+            height: 9px;
+            right: -25px;
+          }
+        }
+      }
+    }
+    &_text {
+      font-size: $font-size-medium;
+      font-weight: lighter;
+      line-height: $lh-l;
+      margin-bottom: 1.5rem;
+      @include mq(tab) {
+        margin-bottom: 0;
+      }
+    }
+    &_img {
+      width: 80%;
+      border: 7px solid $white;
+      margin: 0 auto;
+      @include mq(tab) {
+        width: 100%;
+      }
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+.contactArea {
+  padding: 2rem 0;
+  text-align: center;
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  background: $white;
+  letter-spacing: $ls-large;
+  @include mq(tab) {
+    display: flex;
+  }
+  &_text {
+    font-weight: bold;
+    margin-bottom: .75rem;
+    color: $secondary;
+  }
+  &-tel {
+    padding-bottom: 2rem;
+    position: relative;
+    @include mq(tab) {
+      width: 50%;
+      padding: 0;
+    }
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 100px;
+      height: 1px;
+      background: $black;
+      margin-left: -50px;
+      @include mq(tab) {
+        width: 1px;
+        height: 100px;
+        left: auto;
+        right: 0;
+        bottom: 50%;
+        margin-bottom: -50px;
+        margin-left: 0;
+      }
+    }
+    &-nom {
+      font-size: $font-size-title-m;
+      font-weight: bold;
+    }
+    &-time {
+      color: rgba($color: #707070, $alpha: 0.3);
+    }
+  }
+  &-mail {
+    padding-top: 2rem;
+    @include mq(tab) {
+      padding: 0;
+      width: 50%;
+    }
+  }
+}
+
+.others {
+  &Area {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 0;
+    &::before {
+      content:'';
+      position: absolute;
+      width: 100%;
+      height: 112px;
+      background: rgba($color: $beige, $alpha: 0.5);
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      @include mq(pc) {
+        height: 170px;
+      }
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 112px;
+      background: url(/wp-content/uploads/pattern-giza.png)no-repeat;
+      background-size: 100%;
+      width: 100%;
+      height: 5vw;
+      opacity: .5;
+      z-index: -1;
+      @include mq(pc) {
+        bottom: 170px;
+      }
+    }
+  }
+  @include mq(pc) {
+    padding: 0 50px;
+  }
+  &_item {
+    margin-bottom: 4rem;
+    &_img {
+      img {
+        display: block;
+        width: 100%;
+        height: calc((100vw - 3.5rem)/2);
+        object-fit: cover;
+        margin-bottom: 1rem;
+        border-radius: 50%;
+        @include mq(tab) {
+          height: calc((100vw - 6.5rem)/4);
+        }
+        @include mq(pc) {
+          height: calc((100vw - (12rem + 100px))/4);
+          margin-bottom: 2rem;
+        }
+        @include mq(wide) {
+          width: 200px;
+          height: 200px;
+          margin: 0 auto 2rem;
+        }
+      }
+    }
+  }
+}
+
+.page-bg {
+  position: relative;
+  &::before {
+    content: '';
+    position:absolute;
+    left:-85px;
+    top: 110px;
+    width: 210px;
+    height: 170px;
+    background: url(/wp-content/uploads/tree-bg.png)center / cover no-repeat;
+    z-index: -1;
+    @include mq(tab) {
+      bottom: 0;
+      top: auto;
+      width: 300px;
+      height: 260px;
+    }
+    @include mq(wide) {
+      width: 380px;
+      height: 315px;
+      left: 50px;
+    }
+  }
+  &::after {
+    content: '';
+    position:absolute;
+    right: -35px;
+    top: 50px;
+    width: 144px;
+    height: 182px;
+    background: url(/wp-content/uploads/page-bg-right.png)center / cover no-repeat;
+    z-index: -1;
+    @include mq(tab) {
+      right: 0;
+      width: 216px;
+      height: 273px;
+    }
+    @include mq(wide) {
+      right: 50px;
+      width: 302px;
+      height: 383px;
+      bottom: auto;
+      top: -130px;
+    }
+  }
+}
+
+.yumenoki-bg-right {
+  position: relative;
+  &::before {
+    @include mq(pc) {
+      content: '';
+      position: absolute;
+      width: 262px;
+      height: 731px;
+      right: 0;
+      top: 130px;
+      background: url(/wp-content/uploads/yumenoki-bg-green.png)center / cover no-repeat;
+      z-index: -1;
+      opacity: .2;
+    }
+  }
+}
+
+.yumenoki-bg-left {
+  position: relative;
+  &::before {
+    @include mq(pc) {
+      content: '';
+      position: absolute;
+      width: 262px;
+      height: 731px;
+      left: 0;
+      top: 130px;
+      background: url(/wp-content/uploads/yumenoki-bg-beige.png)center / cover no-repeat;
+      z-index: -1;
+    }
+  }
+}
+
+/* ==========================================================================
+   その他
+   ========================================================================== */
+
+//topに戻るボタン
+.entry {
+  position: fixed;
+  width: 77px;
+  height: 77px;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+  @include mq(tab) {
+    width: 100px;
+    height: 100px;
+    right: 4rem;
+    bottom: 4rem;
+  }
+}
+.entry_btn {
+  display: inline-block;
+  color: $white;
+  font-size: $font-size-base;
+  padding: 12.5px 0;
+  border-radius: 50%;
+  background: $primary;
+  width: 100%;
+  height: 100%;
+
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  &-arrow {
+    transition: 0.3s;
+  }
+  &:hover {
+    opacity: 1;
+    color: $white;
+  }
+  @include mq(tab) {
+    font-size: 19px;
+    padding: 22px 0;
+    line-height: 1.2;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      border-radius: 50%;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      background: $secondary;
+      transform: scale(0);
+      transition: 0.3s ease all;
+      z-index: -1;
+    }
+    &:hover {
+      &::after {
+        transform: scale(1);
+      }
+      .entry_btn-arrow {
+        margin-left: 2.5rem;
+      }
+    }
+  }
+}
+
+.catch {
+  font-size: $font-size-title;
+  font-weight: normal;
+  margin-bottom: 2rem;
+  font-family: "shirokuma";
+  @include mq(pc) {
+    font-size: 55px;
+  }
+  &_text {
+    font-size: $font-size-base;
+    @include mq(pc) {
+      font-size: $font-size-medium;
+    }
+  }
+}
+
+//lead
+.lead {
+  line-height: $lh-l;
+  letter-spacing: $ls-large;
+  margin-bottom: 2rem;
+}
+
+//border-radius
+
+.radius-20 {
+  border-radius: 20px;
+}
+
+.contentArea {
+  padding: 2rem 1rem;
+  background: rgba($color: $primary, $alpha: 0.1);
+  @include mq(tab) {
+    padding: 3rem 0;
+  }
+}
+
+/* ==========================================================================
+   pager
+   ========================================================================== */
+
+//pager-single
+
+.navigation {
+  .screen-reader-text {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 0;
+    width: 160px;
+    margin: 0 auto;
+    font-size: $font-size-base;
+    justify-content: space-between;
+    a {
+      color: rgba($color: $secondary, $alpha: 0.4);
+      &:hover {
+        color: rgba($color: $secondary, $alpha: 1);
+      }
+    }
+  }
+}
+
+//pagination
+
+.pagination {
+  justify-content: center;
+  font-size: 19px;
+  padding: 2rem 0;
+  .page_num {
+    display: none;
+  }
+  a {
+    color: rgba($color: #634231, $alpha: 0.4);
+    margin: 0 0.5rem;
+  }
+  span {
+    margin: 0 0.5rem;
+  }
+  .current {
+    width: 36px;
+    height: 36px;
+    background: $primary;
+    border-radius: 50%;
+    color: $white;
+    font-weight: bold;
+    padding-top: 4px;
+  }
+  .pager {
+    width: 36px;
+  }
+  .next {
+    width: 36px;
+  }
+  .last {
+    width: 36px;
+  }
+}
+
+/* ==========================================================================
+   table
+   ========================================================================== */
+
+//table
+
+.ctm_table {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  @include mq(tab) {
+    margin-bottom: 5rem;
+  }
+  tr {
+    border-bottom: 2px dotted rgba($color: #707070, $alpha: 0.3);
+  }
+  th {
+    width: 100%;
+    display: block;
+    padding: 15px 10px 0;
+    @include mq(tab) {
+      display: table-cell;
+      width: 20%;
+      padding: 15px 10px;
+    }
+  }
+  td {
+    display: block;
+    width: 100%;
+    padding: 0 10px 15px;
+    font-weight: lighter;
+    @include mq(tab) {
+      display: table-cell;
+      width: 80%;
+      padding: 15px 10px;
+    }
+  }
+}
+
+/* ==========================================================================
+   banner
+   ========================================================================== */
+
+//banner
+.banner {
+  max-width: 500px;
+  margin: 0 auto;
+  @include mq(tab) {
+    max-width: 1200px;
+  }
+  &_img {
+    background: url(/wp-content/uploads/no-image.jpg) center / cover no-repeat;
+    width: 100%;
+    height: 191px;
+    @include mq(tab) {
+      width: 60%;
+    }
+    @include mq(pc) {
+      width: 66%;
+    }
+  }
+  &Inner {
+    text-align: center;
+    padding: 1.5rem;
+    width: 100%;
+    &-catch {
+      font-weight: 500;
+      position: relative;
+      margin-bottom: 0.5rem;
+      letter-spacing: $ls-large;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 2px;
+        left: 50%;
+        transform: translateX(-110px);
+        width: 220px;
+        height: 8px;
+        background: rgba($color: $primary, $alpha: 0.5);
+      }
+    }
+    &Area {
+      display: flex;
+      align-items: center;
+      background: $white;
+      @include mq(tab) {
+        width: 40%;
+      }
+      @include mq(pc) {
+        width: 34%;
+      }
+    }
+    &_title {
+      font-size: $font-size-title-m;
+      letter-spacing: $ls-larger;
+      font-weight: bold;
+      color: $secondary;
+      margin-bottom: 5px;
+      @include mq(pc) {
+        font-size: 45px;
+      }
+    }
+  }
+  .is-flex-tablet {
+    flex-direction: row-reverse;
+  }
+}

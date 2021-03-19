@@ -1,0 +1,12 @@
+$mq-breakpoints: (
+  'mobile': 767px,
+  'tab': 769px,
+  'pc' : 1024px,
+  'wide' : 1216px,
+);
+
+@mixin mq($breakpoint: mobile) {
+  @media screen and (min-width: #{map-get($mq-breakpoints, $breakpoint)}) {
+    @content;
+  }
+}

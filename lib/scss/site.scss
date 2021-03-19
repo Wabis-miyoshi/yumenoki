@@ -1,0 +1,185 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+
+$primary: #72b38c;
+$secondary: #ad8f77;
+$beige: #f2f2e1;
+$black: #3d2d22;
+$grey: #f8f8f8;
+$ocher: #d6d697;
+$white: #fff;
+
+$desktop: 1024px !default;
+
+// bulma読み込み
+@import "vendor/bulma/bulma";
+
+//scssファイル読み込み
+@import "mixins/media";
+
+/* ==========================================================================
+   font-size
+   ========================================================================== */
+
+$font-size-large: 20px !default;
+$font-size-larger: 18px !default;
+$font-size-medium: 16px !default;
+$font-size-base: 14px !default;
+$font-size-smaller: 13px !default;
+$font-size-small: 12px !default;
+$font-size-title: 25px !default;
+$font-size-title-m: 30px !default;
+$font-size-title-l: 35px !default;
+
+/* ==========================================================================
+   スペースレベル
+   ========================================================================== */
+/**
+ * マージンやパディングを取る際の値を定義
+*/
+$space-smaller: 5px !default;
+$space-small: 10px !default;
+$space-medium: 20px !default;
+$space-large: 40px !default;
+$space-larger: 80px !default;
+$space-largest: 120px !default;
+
+/* ==========================================================================
+   Margin and Padding Helpers
+   ========================================================================== */
+/**
+ * いろんな場所で使用するマージンとパディングの値を定義
+*/
+$spaceamounts: (0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 75, 100);
+$sides: (top, bottom, left, right);
+
+@each $space in $spaceamounts {
+  @each $side in $sides {
+    .m#{str-slice($side, 0, 1)}-#{$space} {
+      margin-#{$side}: #{$space}px !important;
+    }
+    .p#{str-slice($side, 0, 1)}-#{$space} {
+      padding-#{$side}: #{$space}px !important;
+    }
+  }
+}
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}px !important;
+  }
+  .p-#{$space} {
+    padding: #{$space}px !important;
+  }
+}
+
+/* ==========================================================================
+   line-height
+   ========================================================================== */
+
+$lh-s: 1.2;
+$lh-l: 2;
+
+/* ==========================================================================
+   letter-spacing
+   ========================================================================== */
+
+$ls-large: 0.1em;
+$ls-larger: 0.3em;
+$ls-small: 0.05em;
+
+/* ==========================================================================
+   animation基本設定
+   ========================================================================== */
+
+@mixin animationValue($name, $duration, $function, $delay, $count, $state) {
+  -webkit-animation: $name $duration + s $function $delay + s $count $state;
+  animation: $name $duration + s $function $delay + s $count $state;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+//scssファイル読み込み
+@import "variables";
+@import "mixins/media";
+@import "mixins/placeholder";
+@import "overwrite";
+@import "layout";
+@import "components";
+@import "utility";
+
+
+//ボタン
+.linkBtn {
+  position: relative;
+  display: block;
+  padding: 5px 9px;
+  background-color: $black;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: 2px solid $black;
+  &::after {
+    position: absolute;
+    content: "\f061";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    top: 50%;
+    right: 7px;
+    left: auto;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  @include mq(pc) {
+    padding: 8px 13px;
+  }
+  &:hover {
+    color: $black;
+    background-color: $white;
+  }
+}
+
+.detailText {
+  line-height: 1.7;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  padding-top: 10px;
+  @include mq(pc) {
+    padding-top: 20px;
+    padding-left: 40px;
+  }
+}
+
+
+.catList {
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  border-bottom: 1px solid $secondary;
+  margin-bottom: 2rem;
+  padding: 20px 10px;
+
+  li {
+    margin: 0 10px;
+    font-weight: 600;
+    a {
+      padding: 7px 10px;
+      color: $white;
+      background-color: $primary;
+      border: 1px solid $primary;
+      &:hover {
+        color: $primary;
+        background-color: $white;
+      }
+    }
+  }
+}

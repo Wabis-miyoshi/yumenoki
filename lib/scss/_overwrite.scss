@@ -1,0 +1,30 @@
+//bluma
+
+.section {
+  padding: 4rem 1rem;
+  overflow: hidden;
+  @include mq(wide) {
+    padding: 100px 0;
+  }
+  &.blog {
+    padding: 4rem 0.75rem;
+  }
+}
+
+//slick
+.slick-arrow {
+  cursor: pointer;
+}
+.slick-dots li button:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: $black;
+  opacity: 0.15;
+}
+
+.slick-dots li.slick-active button:before {
+  background: $primary;
+  opacity: 1;
+}
