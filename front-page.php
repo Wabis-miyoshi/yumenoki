@@ -152,7 +152,7 @@
     <div class="recruitArea">
       <h3 class="recruitArea_title">入園案内</h3>
       <div class="recruitArea_text has-text-centered">ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯</div>
-      <a href="/recruit/" class="btn">詳しくはこちら</a>
+      <a href="/admission" class="btn">詳しくはこちら</a>
     </div>
   </section>
 
