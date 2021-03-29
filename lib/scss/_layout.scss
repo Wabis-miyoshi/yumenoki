@@ -1236,6 +1236,14 @@ a {
     padding-bottom: 2rem;
     align-items: end;
     justify-content: space-between;
+    &-left {
+      @include mq(tab) {
+        width: 61%;
+        &.no_img {
+          width: 100%;
+        }
+      }
+    }
     &-time {
       display: flex;
       align-items: center;

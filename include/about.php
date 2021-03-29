@@ -36,10 +36,10 @@ if( $group_name ):
     <?php while(have_rows('block2')): the_row(); ?>
     <div class="ctm_item">
       <div class="ctm_item-right">
-        <div class="is-flex-tablet">
+        <div class="is-flex-tablet flex-center">
           <div class="ctm_item-nom text-shadow"><?php the_sub_field('num'); ?><span class="is-block"></span></div>
           <div class="ctm_item_title">
-            <span><?php the_sub_field('catch'); ?></span>
+            <?php the_sub_field('catch'); ?>
           </div>
         </div>
         <div class="ctm_item_text">
