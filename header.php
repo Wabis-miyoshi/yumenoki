@@ -63,8 +63,8 @@
         <li class="menuList_item"><a href="/access/">アクセス<span><br>Access</span></a></li>
       </ul>
       <ul class="menu-pageLink font-genjyuu">
-        <li class="menu-pageLink_item about" style="background: url(/wp-content/uploads/message_main.jpg) center/cover no-repeat;"><a href="/news/"><p><span class="font-shirokuma">お知らせ</span><br>News</p></a></li>
-        <li class="menu-pageLink_item admission" style="background: url(/wp-content/uploads/requirement_main.jpg) center/cover no-repeat;"><a href="/blog/"><p><span class="font-shirokuma">ゆめの樹ブログ</span><br>Blog</p></a></li>
+        <li class="menu-pageLink_item about" style="background: url(/wp-content/uploads/9de90b91a3d913b6ebaa39d19a2de293.jpg) center/cover no-repeat;"><a href="/news/"><p><span class="font-shirokuma">お知らせ</span><br>News</p></a></li>
+        <li class="menu-pageLink_item admission" style="background: url(/wp-content/uploads/360a203d2f2b828e7563db3f440b7bcb.jpg) center/cover no-repeat;"><a href="/blog/"><p><span class="font-shirokuma">ゆめの樹ブログ</span><br>Blog</p></a></li>
       </ul>
     </div>
       </div>

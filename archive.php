@@ -11,7 +11,7 @@
     </div>
   </section>
   <section class="mainVisual">
-    <div class="mainVisual_img" style="background: url(/wp-content/uploads/2021/03/mv.jpg) center / cover no-repeat;"></div>
+    <div class="mainVisual_img" style="background: url(/wp-content/uploads/360a203d2f2b828e7563db3f440b7bcb.jpg) center / cover no-repeat;"></div>
   </section>
 
   <section class="section">
