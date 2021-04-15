@@ -445,24 +445,6 @@
       font-size: $font-size-large;
       font-weight: bold;
       color: $primary;
-      span {
-        display: block;
-        background: white;
-        margin-bottom: 1rem;
-        padding: 0.5rem 1rem;
-        transform: rotate(1deg);
-        text-align: center;
-        @include mq(pc) {
-          margin-bottom: 1.5rem;
-        }
-        &:last-child {
-          margin: 0 0 2rem 0;
-          transform: rotate(-1deg);
-          @include mq(pc) {
-            margin: 0 0 3rem 0;
-          }
-        }
-      }
     }
     &-nom {
       font-size: $font-size-title-l;
@@ -747,6 +729,12 @@
    その他
    ========================================================================== */
 
+
+//flex
+
+.flex-center {
+  align-items: center;
+}
 //topに戻るボタン
 .entry {
   position: fixed;
