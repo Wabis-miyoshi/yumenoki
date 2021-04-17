@@ -10,6 +10,7 @@
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/lib/css/slick.css">
   <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/lib/css/slick-theme.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
   <?php wp_head();?>
 
   <?php echo get_option('analytics_tracking_code');?>

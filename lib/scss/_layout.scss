@@ -570,6 +570,7 @@ a {
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     letter-spacing: $ls-large;
+    z-index: 1;
     @include mq(tab) {
       font-size: $font-size-title;
     }
@@ -594,6 +595,7 @@ a {
     padding: 11px 5rem 11px 1rem;
     width: 80%;
     border-radius: 0 33.5px 33.5px 0;
+    z-index: 1;
     @include mq(pc) {
       display: flex;
       width: 40%;
