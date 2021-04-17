@@ -27,8 +27,8 @@
           <a href="<?php echo home_url(); ?>"><?php echo $logo_inner; ?></a><br />
         </<?php echo $logo_wrap; ?>>
           <div class="footerLogoArea_text">
-            <p>〒591-801<br>堺市北区花田町2480-4</p>
-            <p>TEL：072-291-6400<br>FAX：072-291-6410</p>
+            <p>〒591-8022<br>大阪府堺市北区金岡町2480-4</p>
+            <p>TEL：072-242-7034<br>FAX：072-242-7035</p>
           </div>
         </div><!-- .footerLogoArea -->
         <div class="column is-hidden-touch is-5">
@@ -43,10 +43,11 @@
               <div>
                 <a href="/access/" class="footerMenuList_item">アクセス</a>
                 <a href="/recruit/" class="footerMenuList_item">採用情報</a>
-                <a href="/links/" class="footerMenuList_item">リンク</a>
+                <a href="/link/" class="footerMenuList_item">関連リンク</a>
                 <a href="/contact/" class="footerMenuList_item">お問い合わせ</a>
               </div>
               <div>
+                <a href="/info/" class="footerMenuList_item">情報公開</a>
                 <a href="/blog/" class="footerMenuList_item">ブログ</a>
                 <a href="/news/" class="footerMenuList_item">お知らせ</a>
               </div>
@@ -57,15 +58,15 @@
           <div class="footerAppArea">
             <div class="footerAppArea-name is-flex">
               <div class="footerAppArea-name-img">
-                <img src="" alt="">
+                <img src="/wp-content/uploads/appIcon.png" alt="">
               </div>
               <div class="footerAppArea-name_text">
-                <p><span>連絡帳アプリ</span><br>アプリの名前アプリの名前</p>
+                <p><span>連絡帳アプリ</span><br>kidsly（キッズリー‪）</p>
               </div><!-- .footerAppArea-name_text -->
             </div><!-- .footerAppArea-name -->
             <div class="footerAppArea-btn is-flex">
-              <a href="" class="footerAppArea-btn_item"><img src="/wp-content/uploads/google-play.png" alt=""></a>
-              <a href="" class="footerAppArea-btn_item"><img src="http://yumenoki.vs-development.xyz/wp-content/uploads/app-store.png" alt=""></a>
+              <a href="https://play.google.com/store/apps/details?id=jp.recruit.kidsly&hl=ja" target="_blank" class="footerAppArea-btn_item"><img src="/wp-content/uploads/google-play.png" alt=""></a>
+              <a href="https://apps.apple.com/jp/app/kidsly-kizzuri/id1059618626" target="_blank" class="footerAppArea-btn_item"><img src="/wp-content/uploads/app-store.png" alt=""></a>
             </div>
           </div><!-- .footerAppArea -->
         </div>

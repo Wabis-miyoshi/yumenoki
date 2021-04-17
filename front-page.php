@@ -7,7 +7,11 @@
       <div class="topVisual_img" style="background: url(<?php the_post_thumbnail_url("", "full"); ?>) center / cover no-repeat;"></div>
     </div>
     <div class="topVisual-catch">
-      <p><span>園のキャッチが入ります</span><br><span>ここに園のキャッチが入ります</span><br><span>キャッチが入ります</span></p>
+      <p>
+        <span>「見通しを持って」「見守り」「認める」保育</span><br>
+        <span>一人ひとりのこども達に</span><br>
+        <span>あふれんばかりの愛情を</span>
+      </p>
     </div>
     <?php
         $args = array(
@@ -59,7 +63,7 @@
         <?php endif; ?>
         </ul>
         <div class="has-text-right">
-          <a href="/information/" class="more">詳しくはこちら&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right color-primary"></i></a>
+          <a href="/news/" class="more">詳しくはこちら&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right color-primary"></i></a>
         </div>
       </div>
   </section><!-- .section -->
@@ -75,11 +79,11 @@
           </div>
           <div class="column">
             <div class="appeal_title">
-              <p><span>文字の大きさ等を確認す</span><span>文字の大きさ等を確認す</span></p>
+              <p><span>すべては</span><span>こどもたちのために</span></p>
             </div>
             <div class="appeal_text">
-            この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。<br>この文章はダミーです。<br>文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために<br>入れています。<br>
-            この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。
+              「愛情」をかけ「生活する力」を身に着け「すこやかな身体を」「心と言葉」「自立と協調性」育みます。<br>
+              自己解決できるお子様を育てます。
             </div>
           </div>
         </div>
@@ -96,16 +100,16 @@
             <img src="/wp-content/uploads/about-top.png" alt="">
           </div>
           <div class="pageLink_item-left">
-            <div class="pageLink_item-catch"><span>ゆめのこども園さかいって</span><span>どんなところ？</span></div>
+            <div class="pageLink_item-catch"><span>ゆめの樹こども園&nbsp;さかいって</span><span>どんなところ？</span></div>
           </div>
           <div class="pageLink_item-right">
             <div class="pageLink_item_img">
               <img src="/wp-content/uploads/no-image.jpg" alt="">
             </div>
             <div class="pageLink_item_text">
-              <p>ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯</p>
+              <p>思いっきり遊びます！</p>
             </div>
-            <a href="" class="btn">詳細はこちら</a>
+            <a href="/about" class="btn">詳細はこちら</a>
           </div>
         </div>
 
@@ -114,16 +118,16 @@
             <img src="/wp-content/uploads/message-top.png" alt="">
           </div>
           <div class="pageLink_item-left">
-            <div class="pageLink_item-catch"><span>ゆめのこども園さかいって</span><span>どんなところ？</span></div>
+            <div class="pageLink_item-catch"><span>未来ある子どもたち</span><span>一人ひとりを大切に</span></div>
           </div>
           <div class="pageLink_item-right">
             <div class="pageLink_item_img">
               <img src="/wp-content/uploads/no-image.jpg" alt="">
             </div>
             <div class="pageLink_item_text">
-              <p>ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯</p>
+              <p>「ありがとう」と「ごめんなさい」と素直にいえるそんな大人になってほしいですね。</p>
             </div>
-            <a href="" class="btn">詳細はこちら</a>
+            <a href="/message" class="btn">詳細はこちら</a>
           </div>
         </div>
 
@@ -132,16 +136,16 @@
             <img src="/wp-content/uploads/life-top.png" alt="">
           </div>
           <div class="pageLink_item-left">
-            <div class="pageLink_item-catch"><span>ゆめのこども園さかいって</span><span>どんなところ？</span></div>
+            <div class="pageLink_item-catch"><span>元気いっぱい！</span><span>子どもたちの笑顔</span></div>
           </div>
           <div class="pageLink_item-right">
             <div class="pageLink_item_img">
               <img src="/wp-content/uploads/no-image.jpg" alt="">
             </div>
             <div class="pageLink_item_text">
-              <p>ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯</p>
+              <p>自然豊かな園庭で元気よく</p>
             </div>
-            <a href="" class="btn">詳細はこちら</a>
+            <a href="/life" class="btn">詳細はこちら</a>
           </div>
         </div>
       </div>
@@ -151,7 +155,7 @@
   <section>
     <div class="recruitArea">
       <h3 class="recruitArea_title">入園案内</h3>
-      <div class="recruitArea_text has-text-centered">ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯ダミー文字◯</div>
+      <div class="recruitArea_text has-text-centered">あそびの中で育むこころ、あそびの中で育む感覚、あそびの中で育む力</div>
       <a href="/admission" class="btn">詳しくはこちら</a>
     </div>
   </section>
@@ -243,18 +247,17 @@
             <div class="linkListBlock_title">
               <h4>学校法人泉新学園</h4>
             </div>
-            <a class="linkListBlock_item" href=""><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;晴美台幼稚園</a>
-            <a class="linkListBlock_item" href=""><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;みついしこども園</a>
-            <a class="linkListBlock_item" href=""><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;かがやきの森保育園あいおい</a>
-            <a class="linkListBlock_item" href=""><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;晴美台ナーサリー</a>
-            <a class="linkListBlock_item" href=""><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;ゆめの樹こども園さかい</a>
+            <a class="linkListBlock_item" href="http://harumidai.senshin.ed.jp/" target="_blank"><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;晴美台幼稚園</a>
+            <a class="linkListBlock_item" href="http://mitsuishi.senshin.ed.jp/" target="_blank"><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;みついしこども園</a>
+            <a class="linkListBlock_item" href="https://senshin-group.com/aioi" target="_blank"><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;かがやきの森保育園あいおい</a>
+            <a class="linkListBlock_item" href="https://senshin-group.com/harumidai_nursery" target="_blank"><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;晴美台ナーサリー</a>
           </div>
           <div class="linkListBlock">
             <div class="linkListBlock_title">
               <h4>社会福祉法人泉新会</h4>
             </div>
-            <a class="linkListBlock_item" href=""><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;輝きの森学園</a>
-            <a class="linkListBlock_item" href=""><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;かがやきの森保育園うえだ</a>
+            <a class="linkListBlock_item" href="http://kagayaki.senshin.ed.jp/" target="_blank"><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;輝きの森学園</a>
+            <a class="linkListBlock_item" href="https://senshin-group.com/ueda" target="_blank"><i class="fas fa-arrow-right color-primary"></i>&nbsp;&nbsp;&nbsp;かがやきの森保育園うえだ</a>
           </div>
         </div>
       </div>

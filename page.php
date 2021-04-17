@@ -64,7 +64,7 @@ Template Name: デフォルト
         <div class="column is-half-mobile is-one-quarter-tablet">
           <div class="others_item">
             <div class="others_item_img">
-              <img src="/wp-content/uploads/no-image.jpg" alt="">
+              <img src="/wp-content/uploads/common01.jpg" alt="">
             </div>
             <a href="/message/" class="btn">園長挨拶</a>
           </div>
@@ -72,7 +72,7 @@ Template Name: デフォルト
         <div class="column is-half-mobile is-one-quarter-tablet">
           <div class="others_item">
             <div class="others_item_img">
-              <img src="/wp-content/uploads/no-image.jpg" alt="">
+              <img src="/wp-content/uploads/common02.jpg" alt="">
             </div>
             <a href="/about/" class="btn">園について</a>
           </div>
@@ -80,7 +80,7 @@ Template Name: デフォルト
         <div class="column is-half-mobile is-one-quarter-tablet">
           <div class="others_item">
             <div class="others_item_img">
-              <img src="/wp-content/uploads/no-image.jpg" alt="">
+              <img src="/wp-content/uploads/common03.jpg" alt="">
             </div>
             <a href="/admission/" class="btn">入園案内</a>
           </div>
@@ -88,7 +88,7 @@ Template Name: デフォルト
         <div class="column is-half-mobile is-one-quarter-tablet">
           <div class="others_item">
             <div class="others_item_img">
-              <img src="/wp-content/uploads/no-image.jpg" alt="">
+              <img src="/wp-content/uploads/common04.jpg" alt="">
             </div>
             <a href="/blog/" class="btn">ブログ</a>
           </div>
