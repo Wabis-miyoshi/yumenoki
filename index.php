@@ -11,7 +11,7 @@
     </div>
   </section>
   <section class="mainVisual">
-    <div class="mainVisual_img" style="background: url(/wp-content/uploads/9de90b91a3d913b6ebaa39d19a2de293.jpg) center / cover no-repeat;"></div>
+    <div class="mainVisual_img" style="background: url(/wp-content/uploads/news-main.jpg) center / cover no-repeat;"></div>
   </section>
   <section class="section">
     <div class="container newsArea newsArea-achive w-1000">
