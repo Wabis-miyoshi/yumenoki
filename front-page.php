@@ -3,8 +3,12 @@
 <div class="main">
   <?php if(has_post_thumbnail()): ?>
   <section class="topVisual">
-    <div class="topVisual-slider">
-      <div class="topVisual_img" style="background: url(<?php the_post_thumbnail_url("", "full"); ?>) center / cover no-repeat;"></div>
+    <div class="swiper-container topVisual-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide topVisual_img" style="background: url(<?php the_post_thumbnail_url("", "full"); ?>) center / cover no-repeat;"></div>
+        <div class="swiper-slide topVisual_img" style="background: url(/wp-content/uploads/59bb941d82afbd19acf3cf11dcb53a62.jpg) center / cover no-repeat;"></div>
+        <div class="swiper-slide topVisual_img" style="background: url(/wp-content/uploads/7f6e60bff7b0fc0b9537a07df95b585b.jpg) center / cover no-repeat;"></div>
+      </div>
     </div>
     <div class="topVisual-catch">
       <p>

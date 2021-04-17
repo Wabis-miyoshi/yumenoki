@@ -74,6 +74,7 @@
     </div>
     <div class="copy has-text-centered-touch w-1200">&copy; <script>document.write(new Date().getFullYear());</script> Yumenoki Kodomoen group.</div>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/js/swiper.min.js"></script>
   <?php wp_footer(); ?>
   <script src="<?php echo get_template_directory_uri() ?>/lib/js/slick.min.js"></script>
   </body>
