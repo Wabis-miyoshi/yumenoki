@@ -16,7 +16,6 @@
           <?php while(have_posts()) : the_post(); ?>
           <div class="has-text-weight-bold">
             <p class="mb-20">
-              <?php $terms = get_the_terms($post->ID, 'blog_cat'); foreach($terms as $term){ $term_name = $term->name; echo $term_name; break; }; ?>
               <time datetime="2016-1-1"><?php echo get_the_date(); ?></time>
             </p>
             <h3 class="newsList_item_title newsList_item_title-single is-size-5-touch mb-10"><?php the_title(); ?></h3>

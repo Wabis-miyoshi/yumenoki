@@ -5,14 +5,16 @@
   <section class="topVisual">
     <div class="swiper-container topVisual-slider">
       <div class="swiper-wrapper">
-        <div class="swiper-slide topVisual_img" style="background: url(<?php the_post_thumbnail_url("", "full"); ?>) center / cover no-repeat;"></div>
-        <div class="swiper-slide topVisual_img" style="background: url(/wp-content/uploads/59bb941d82afbd19acf3cf11dcb53a62.jpg) center / cover no-repeat;"></div>
-        <div class="swiper-slide topVisual_img" style="background: url(/wp-content/uploads/7f6e60bff7b0fc0b9537a07df95b585b.jpg) center / cover no-repeat;"></div>
+        <div class="swiper-slide topVisual_img" style="background: url(/wp-content/uploads/topMain-001.jpg) center / cover no-repeat;"></div>
+        <div class="swiper-slide topVisual_img" style="background: url(/wp-content/uploads/topMain-002.jpg) center / cover no-repeat;"></div>
+        <div class="swiper-slide topVisual_img" style="background: url(/wp-content/uploads/topMain-003.jpg) center / cover no-repeat;"></div>
+        <div class="swiper-slide topVisual_img" style="background: url(/wp-content/uploads/topMain-004.jpg) center / cover no-repeat;"></div>
+        <div class="swiper-slide topVisual_img" style="background: url(/wp-content/uploads/topMain-005.jpg) center / cover no-repeat;"></div>
       </div>
     </div>
     <div class="topVisual-catch">
       <p>
-        <span>「見通しを持って」「見守り」「認める」保育</span><br>
+        <span>「見通しを持って」「見守り」「認める」</span><br>
         <span>一人ひとりのこども達に</span><br>
         <span>あふれんばかりの愛情を</span>
       </p>
@@ -78,7 +80,7 @@
         <div class="columns is-variable is-8-desktop">
           <div class="column">
             <div class="appeal_img">
-              <img src="/wp-content/uploads/no-image.jpg" alt="" class="radius-20">
+              <img src="/wp-content/uploads/DSC03332-86.jpg" alt="" class="radius-20">
             </div>
           </div>
           <div class="column">
@@ -108,7 +110,7 @@
           </div>
           <div class="pageLink_item-right">
             <div class="pageLink_item_img">
-              <img src="/wp-content/uploads/no-image.jpg" alt="">
+              <img src="/wp-content/uploads/59bb941d82afbd19acf3cf11dcb53a62.jpg" alt="">
             </div>
             <div class="pageLink_item_text">
               <p>思いっきり遊びます！</p>
@@ -126,7 +128,7 @@
           </div>
           <div class="pageLink_item-right">
             <div class="pageLink_item_img">
-              <img src="/wp-content/uploads/no-image.jpg" alt="">
+              <img src="/wp-content/uploads/2c9f672bcd49acb2436b4b79a984705f.jpg" alt="">
             </div>
             <div class="pageLink_item_text">
               <p>「ありがとう」と「ごめんなさい」と素直にいえるそんな大人になってほしいですね。</p>
@@ -144,7 +146,7 @@
           </div>
           <div class="pageLink_item-right">
             <div class="pageLink_item_img">
-              <img src="/wp-content/uploads/no-image.jpg" alt="">
+              <img src="/wp-content/uploads/7f6e60bff7b0fc0b9537a07df95b585b.jpg" alt="">
             </div>
             <div class="pageLink_item_text">
               <p>自然豊かな園庭で元気よく</p>
@@ -157,7 +159,7 @@
   </section>
 
   <section>
-    <div class="recruitArea">
+    <div class="recruitArea" style="background: url(/wp-content/uploads/3526db894410b3ff327d2d8a636d4a69.jpg) center/cover no-repeat;">
       <h3 class="recruitArea_title">入園案内</h3>
       <div class="recruitArea_text has-text-centered">あそびの中で育むこころ、あそびの中で育む感覚、あそびの中で育む力</div>
       <a href="/admission" class="btn">詳しくはこちら</a>
@@ -188,7 +190,7 @@
         ?>
 
         <div class="column">
-          <a class="blogList_item">
+          <a href="<?php the_permalink(); ?>" class="blogList_item">
             <?php if ( has_post_thumbnail( $post->ID ) ): ?>
             <div class="blogList_item_img">
               <img src="<?php the_post_thumbnail_url( 'full' ); ?>" alt="">
@@ -199,9 +201,6 @@
             </div>
             <?php endif; ?>
             <div class="blogList_item-cat is-flex">
-              <p class="cat">
-                <?php $terms = get_the_terms($post->ID, 'blog_cat'); foreach($terms as $term){ $term_name = $term->name; echo $term_name; break; }; ?>
-              </p>
               <p class="date"><?php the_time('Y.m.d'); ?></p>
             </div>
             <div class="blogList_item_title">
@@ -226,7 +225,7 @@
     <div class="container w-1200">
       <div class="banner">
         <div class="is-flex-tablet">
-          <div class="banner_img"></div>
+          <div class="banner_img" style="background: url(/wp-content/uploads/d4d512049ec036624e1e9e51512ec88a.jpg) center/cover no-repeat;"></div>
           <div class="bannerInnerArea">
             <div class="bannerInner">
               <p class="bannerInner-catch">＼ 私たちと一緒に働きませんか？ ／</p>

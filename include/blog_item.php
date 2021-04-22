@@ -16,9 +16,6 @@
     </div>
     <?php endif; ?>
     <div class="blogList_item-cat is-flex">
-      <p class="cat">
-        <?php $terms = get_the_terms($post->ID, 'blog_cat'); foreach($terms as $term){ $term_name = $term->name; echo $term_name; break; }; ?>
-      </p>
       <p class="date"><?php the_time('Y.m.d'); ?></p>
     </div>
     <div class="blogList_item_title">
