@@ -11,29 +11,11 @@
     </div>
   </section>
   <section class="mainVisual">
-    <div class="mainVisual_img" style="background: url(/wp-content/uploads/360a203d2f2b828e7563db3f440b7bcb.jpg) center / cover no-repeat;"></div>
+    <div class="mainVisual_img" style="background: url(/wp-content/uploads/blog-main.jpg) center / cover no-repeat;"></div>
   </section>
 
   <section class="section">
     <div class="container newsArea newsArea-achive w-1000">
-      <?php if(is_tax()): ?>
-      <div class="ctm_title">
-        <h3 class="deco-green"><?php single_tag_title(); ?>の一覧</h3>
-      </div>
-      <?php endif; ?>
-      <p class="title-border2">
-        <span>カテゴリー</span>
-      </p>
-      <ul class="catList">
-        <?php
-          $cat_all = get_terms( "blog_cat", "fields=all&get=all" );
-          foreach($cat_all as $value):
-        ?>
-        <li class="mb-10">
-          <a href="<?php echo get_category_link($value->term_id); ?>" class="cat cat-<?php echo $value->slug;?>"><?php echo $value->name;?></a>
-        </li>
-        <?php endforeach; ?>
-      </ul>
       <div class="columns mb-75">
         <?php if(have_posts()) : ?>
           <?php while(have_posts()) : the_post(); ?>
