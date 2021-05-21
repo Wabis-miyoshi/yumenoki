@@ -265,6 +265,9 @@
       text-overflow: ellipsis;
       white-space: nowrap;
     }
+    &-right {
+      min-width: 0;
+    }
   }
   &_inner {
     padding: 2rem 0;

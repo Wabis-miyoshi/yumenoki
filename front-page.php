@@ -47,29 +47,40 @@
 
   <section class="section">
     <div class="w-1000">
-      <div class="newsTitle">
-        <h2>お知らせ</h2>
-        <span>News</span>
-      </div><!-- .newsTitle -->
-      <div class="newsArea">
-        <ul class="newsList w-1000">
-        <?php
-            $args = array(
-              'post_type' => 'post', // 投稿タイプのスラッグを指定
-              'post_status' => 'publish', // 公開済の投稿を指定
-              'posts_per_page' => 3, // 投稿件数の指定
-              'orderby' => 'modified' // 更新日時順
-            );
-            $the_query = new WP_Query($args); if($the_query->have_posts()):
-        ?>
-        <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
-          <?php get_template_part('include/newsList_item'); ?>
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-        <?php endif; ?>
-        </ul>
-        <div class="has-text-right">
-          <a href="/news/" class="more">詳しくはこちら&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right color-primary"></i></a>
+      <div class="columns is-variable is-8-desktop">
+        <div class="column is-6-tablet">
+          <div class="newsTitle">
+            <h2>お知らせ</h2>
+            <span>News</span>
+          </div><!-- .newsTitle -->
+          <div class="newsArea">
+            <ul class="newsList w-1000">
+            <?php
+                $args = array(
+                  'post_type' => 'post', // 投稿タイプのスラッグを指定
+                  'post_status' => 'publish', // 公開済の投稿を指定
+                  'posts_per_page' => 3, // 投稿件数の指定
+                  'orderby' => 'modified' // 更新日時順
+                );
+                $the_query = new WP_Query($args); if($the_query->have_posts()):
+            ?>
+            <?php while ($the_query->have_posts()): $the_query->the_post(); ?>
+              <?php get_template_part('include/newsList_item'); ?>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php endif; ?>
+            </ul>
+            <div class="has-text-right">
+              <a href="/news/" class="more">詳しくはこちら&nbsp;&nbsp;&nbsp;<i class="fas fa-arrow-right color-primary"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="column is-6-tablet">
+          <div class="fbArea">
+          <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v10.0" nonce="I7jlzp71"></script>
+<div class="fb-page" data-href="https://www.facebook.com/Test-109880591287057/?ref=page_internal" data-tabs="timeline" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Test-109880591287057/?ref=page_internal" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Test-109880591287057/?ref=page_internal">Test</a></blockquote></div>
+          </div>
         </div>
       </div>
   </section><!-- .section -->
